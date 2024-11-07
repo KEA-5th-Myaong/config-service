@@ -1,0 +1,16 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/KEA-5th-Myaong/config-repo.git
+          search-paths: '{application}'
+
+
+
+
