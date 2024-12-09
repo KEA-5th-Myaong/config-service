@@ -11,6 +11,8 @@ spring:
           uri: https://github.com/KEA-5th-Myaong/config-repo.git
           search-paths: '{application}'
 
-
-
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, info, beans
