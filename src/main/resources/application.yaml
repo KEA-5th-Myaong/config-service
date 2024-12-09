@@ -9,10 +9,5 @@ spring:
       server:
         git:
           uri: https://github.com/KEA-5th-Myaong/config-repo.git
+          default-label: develop
           search-paths: '{application}'
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh, health, info, beans
